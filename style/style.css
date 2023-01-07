@@ -1,0 +1,159 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.circulo{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 100em;
+    height: 20em;
+    margin:2em;
+    background-size: cover;
+}
+#lavamanos{
+    background-image: url(/media/7998tanque-500121.webp);
+    background-position: center;
+}
+#inodoro{
+    background-image: url(/media/inodoro.jpg);
+}
+#ventana{
+    background-image: url(/media/cano-pvc-160x4-mts-32-aprobcloacal-iram.jpg);
+    background-position: center;
+}
+.containerSection{
+    display: grid;
+    grid-template-areas: 
+    "iframe h2"
+    "iframe h2"
+    "iframe h3"
+    "iframe h3"
+    "iframe h4"
+    "iframe h4";
+    margin: 2em;
+}
+iframe{
+    grid-area: iframe;
+}
+h2{
+    grid-area: h2;
+}
+h3{
+    grid-area: h3;
+}
+h4{
+    grid-area: h4;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+#paleta{
+   background-color: aqua;
+   border: 5px solid black;
+   width: 10em;
+   height: 10em;
+}
+#text{
+    font-size: 3em;
+    font-weight: bold;
+}
+.class1{
+    background-color: brown!important;
+    border: 5px solid blue!important;
+}
+.class2{
+    background-color: crimson!important;
+    border: 5px solid darkorange!important;
+}
+#infoButton{
+    border: 2px black solid;
+    border-radius: 50%;
+    margin: 2em;
+}
+#infoButton:hover{
+    transform: scale(2);
+    background-color: yellow;
+}
+#formRegistro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inputForm{
+    border-radius: 5px;
+    border-color: black;
+    margin: 3px;
+    color: yellow;
+    background-color: black;
+}
+#subNav{
+    color: yellow;
+}
+.picRep{
+    border-radius: 1rem ;
+    border: black solid 2px;
+}
+#divPictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.card3{
+    color: yellow;
+}
+#carouselExampleFade{
+    width: 40rem;
+    margin: auto;
+    background-color: black;
+}
+.parraf{
+    background-color: black;
+    color: yellow;
+}
+#close{
+    background-color: black;
+    color: yellow;
+    border: 5px;
+    width: 5rem;
+    height: 3rem;
+}
+@media(max-width:768px){
+    #divPictures{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .picRep{
+        margin-top: 1em;
+        width: 10rem;
+        height: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        flex-direction: column;
+
+    }
+    .circulo{
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 20em;
+        height: 20em;
+        margin:5em;
+        background-size: cover;
+    }
+    iframe{
+        width: auto;
+    }
+    #carouselExampleFade{
+        width: auto;
+        margin: auto;
+        background-color: black;
+    }
+}
+
